@@ -1,6 +1,16 @@
 sentiment analysis of tweets
 ==========  
 Twitter Sentiment Analysis using Python  
+```
+============================================================================================= 
+Under Guidance of						Submitted By,
+	R. Renuga Devi 						A. Aravind	(810015205007)
+	Teaching Fellow 					S. Aravind	(810015205008)
+	Department of IT
+	BIT Campus
+	Trichy.
+============================================================================================== 
+```
 
 Usage
 ----------------
@@ -36,14 +46,4 @@ Follow these steps for the same:
 #### To run:
 ```
 $ python twitter_analysis.py
-```
-```
-============================================================================================= 
-Under Guidance of						Submitted By,
-	R. Renuga Devi 						A. Aravind	(810015205007)
-	Teaching Fellow 					S. Aravind	(810015205008)
-	Department of IT
-	BIT Campus
-	Trichy.
-============================================================================================== 
 ```
