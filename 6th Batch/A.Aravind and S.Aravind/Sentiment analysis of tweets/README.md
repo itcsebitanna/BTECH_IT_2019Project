@@ -3,7 +3,7 @@ sentiment analysis of tweets
 Twitter Sentiment Analysis using Python  
 ```
 ============================================================================================= 
-Under Guidance of						Submitted By,
+Under the Guidance of						Submitted By,
 	R. Renuga Devi 						A. Aravind	(810015205007)
 	Teaching Fellow 					S. Aravind	(810015205008)
 	Department of IT
