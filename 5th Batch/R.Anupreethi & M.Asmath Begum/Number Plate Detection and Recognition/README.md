@@ -36,14 +36,14 @@ $ pip install numpy
 
 Use this command to install pillow
 
-``
+````
 $ pip install pillow
-``
+````
 To Run:
-``
+````
 main.py
-``
-
+````
+Input image is take from root directory: (/testdata/*.png) 
 ### Screenshot
-![Screenshot](/SS1.png)
+![Screenshot](/SS1.PNG)
 
