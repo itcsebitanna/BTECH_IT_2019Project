@@ -4,8 +4,14 @@ Twitter Sentiment Analysis using Python
 ```
 ============================================================================================= 
 Under the Guidance of						Submitted By,
-	R. Renuga Devi 						A. Aravind	(810015205007)
+	Mrs. R. Renuga Devi					A. Aravind	(810015205007)
 	Teaching Fellow 					S. Aravind	(810015205008)
+	Department of IT
+	BIT Campus
+	Trichy.
+Our Project Coordinator
+	Mr. M. PrasannaKumar
+	Teaching Fellow
 	Department of IT
 	BIT Campus
 	Trichy.
