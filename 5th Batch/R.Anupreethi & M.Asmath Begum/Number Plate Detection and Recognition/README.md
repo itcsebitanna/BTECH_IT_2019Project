@@ -28,6 +28,22 @@ Use this Command to install pytesseract
 $ pip install pytesseract
 ``
 
+Use this command to install Numpy
+
+``
+$ pip install numpy
+``
+
+Use this command to install pillow
+
+``
+$ pip install pillow
+``
+To Run:
+``
+main.py
+``
+
 ### Screenshot
 ![Screenshot](/testData/SS1.png)
 
