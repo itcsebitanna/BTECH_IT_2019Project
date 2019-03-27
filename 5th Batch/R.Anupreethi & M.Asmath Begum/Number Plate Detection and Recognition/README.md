@@ -1,10 +1,17 @@
 # Number-Plate-Recognition-System
-Computer Vision Project(EC353).
-
+`````
+Under the Guidance of                       Submitted by
+  Mr.N.Kathirvel                            R.Anupreethi  (810015205006)
+  Teaching Fellow                           M.Asmath Begum(810015205012)
+  Dept of ComputerScience and Engineering
+  Anna University
+  BIT Campus
+  Trichy
+`````
 ### Built Using:
-* Python 2.7
-* OpenCV 3.0.0
-* Tesseract 
+* Python 3.6
+* OpenCV 4.0.0
+* Pytesseract 
 ### Screenshot
 ![Screenshot](/testData/SS1.png)
 
