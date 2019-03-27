@@ -45,5 +45,5 @@ main.py
 ``
 
 ### Screenshot
-![Screenshot](/testData/SS1.png)
+![Screenshot](/SS1.png)
 
