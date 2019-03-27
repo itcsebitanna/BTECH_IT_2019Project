@@ -12,6 +12,22 @@ Under the Guidance of                       Submitted by
 * Python 3.6
 * OpenCV 4.0.0
 * Pytesseract 
+### Usage
+### Installation
+TO install python latest version Click Here: https://www.python.org/downloads/ or https://www.anaconda.com/distribution/#download-section
+
+Use this Command to install OpenCV
+
+``
+$ pip install opencv-python
+``
+
+Use this Command to install pytesseract
+
+``
+$ pip install pytesseract
+``
+
 ### Screenshot
 ![Screenshot](/testData/SS1.png)
 
