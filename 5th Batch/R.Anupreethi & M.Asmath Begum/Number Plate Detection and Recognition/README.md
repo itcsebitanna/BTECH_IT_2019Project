@@ -45,5 +45,5 @@ main.py
 ````
 Input image is take from root directory: (/testdata/*.png) 
 ### Screenshot
-![Screenshot](/SS1.PNG)
+![Screenshot](/SS1.png)
 
