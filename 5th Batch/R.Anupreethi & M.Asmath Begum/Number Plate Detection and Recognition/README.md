@@ -45,5 +45,5 @@ main.py
 ````
 Input image is take from root directory: (/testdata/*.png) 
 ### Screenshot
-![Screenshot](/5th Batch/R.Anupreethi & M.Asmath Begum/Number Plate Detection and Recognition/SS1.PNG)
+![Screenshot](/SS1.PNG)
 
