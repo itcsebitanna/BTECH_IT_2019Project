@@ -1,4 +1,4 @@
-# Number-Plate-Recognition-System
+# Number-Plate-Detection-and-Recognition-System
 `````
 Under the Guidance of                       Submitted by
   Mr.N.Kathirvel                            R.Anupreethi  (810015205006)
