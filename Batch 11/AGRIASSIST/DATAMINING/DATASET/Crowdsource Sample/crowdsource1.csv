@@ -1,0 +1,47 @@
+district,crop,season,periods,dummy,disease
+THANJAVUR,Rice,Kharif     ,15-20,0,Blast
+THANJAVUR,Rice,Whole Year,20-30,1,Bacterial Leaf Blight
+THANJAVUR,Rice,Kharif     ,30-60,2,Rice tungro disease
+THANJAVUR,Rice,Autumn     ,60-70,3,Brown Spot
+THANJAVUR,Rice,Kharif     ,70-80,4,Sheath Blight
+THANJAVUR,Rice,Kharif     ,80-90,5,False Smut
+THANJAVUR,Rice,Kharif     ,15-20,6,Grain discolouration
+ERODE,Rice,Kharif     ,20-30,7,Leaf Streak
+ERODE,Rice,Kharif     ,30-60,3,Brown Spot
+ERODE,Rice,Autumn     ,60-70,4,Sheath Blight
+PUDUKKOTTAI,Rice,Autumn     ,70-80,5,False Smut
+PUDUKKOTTAI,Rice,Autumn     ,80-90,1,Bacterial Leaf Blight
+PUDUKKOTTAI,Rice,Autumn     ,15-20,4,Sheath Blight
+TIRUCHIRAPPALLI,Rice,Whole Year,20-30,5,False Smut
+TIRUCHIRAPPALLI,Rice,Whole Year,30-60,6,Grain discolouration
+TIRUCHIRAPPALLI,Rice,Whole Year,60-70,7,Leaf Streak
+TIRUCHIRAPPALLI,Rice,Autumn     ,70-80,1,Bacterial Leaf Blight
+THANJAVUR,Banana,Whole Year ,80-90,8,Panama wilt
+THANJAVUR,Banana,Whole Year ,15-20,8,Panama wilt
+THANJAVUR,Banana,Whole Year ,20-30,9,Anthracnose
+THANJAVUR,Banana,Whole Year ,30-60,10,Moko disease/bacterial wilt
+THANJAVUR,Banana,Whole Year ,60-70,11,Tip over or bacterial soft rot
+PUDUKKOTTAI,Banana,Whole Year ,70-80,12,Bunchy top/curly top
+PUDUKKOTTAI,Banana,Whole Year ,80-90,13,Banana bract mosaic virus (BBMV)
+PUDUKKOTTAI,Banana,Whole Year ,15-20,14,Banana streak disease (BSV)
+PUDUKKOTTAI,Banana,Whole Year ,20-30,15,Infectious chlorosis (CMV)
+PUDUKKOTTAI,Banana,Whole Year ,30-60,16,"yellow sigatoka,"
+TIRUCHIRAPPALLI,Banana,Whole Year ,60-70,17,black sigatoka
+PUDUKKOTTAI,Banana,Whole Year ,70-80,18,Banana bract mosaic virus (BBMV)
+PUDUKKOTTAI,Banana,Whole Year ,80-90,0,"yellow sigatoka,"
+PUDUKKOTTAI,Banana,Whole Year ,90-120,0,Banana bract mosaic virus (BBMV)
+TIRUCHIRAPPALLI,Banana,Whole Year ,120-180,0,Infectious chlorosis (CMV)
+TIRUCHIRAPPALLI,Banana,Whole Year ,180-230,0,Mycosphaerella leaf spot
+TIRUCHIRAPPALLI,Banana,Whole Year ,230-270,0,Banana bract mosaic virus (BBMV)
+PUDUKKOTTAI,Onion,Kharif     ,15-20,0,Damping off
+PUDUKKOTTAI,Onion,Kharif     ,20-30,0,Purple blotch
+PUDUKKOTTAI,Onion,Kharif     ,30-60,0,Stemphylium leaf blight
+PUDUKKOTTAI,Onion,Kharif     ,60-70,0,Colletotrichum blight
+PUDUKKOTTAI,Onion,Kharif     ,70-80,0,Fusarium basal rot/basal rot
+PUDUKKOTTAI,Onion,Kharif     ,80-90,0,White rot (Sclerotial rot)
+PUDUKKOTTAI,Onion,Kharif     ,15-20,0,Pink root rot
+PUDUKKOTTAI,Onion,Kharif     ,20-30,0,White rot (Sclerotial rot)
+TIRUCHIRAPPALLI,Onion,Kharif     ,30-60,0,Colletotrichum blight
+TIRUCHIRAPPALLI,Onion,Kharif     ,60-70,0,Iris yellow spot disease
+TIRUCHIRAPPALLI,Onion,Kharif     ,70-80,0,Onion yellow dwarf disease
+PUDUKKOTTAI,Onion,Kharif     ,80-90,0,Stemphylium leaf blight

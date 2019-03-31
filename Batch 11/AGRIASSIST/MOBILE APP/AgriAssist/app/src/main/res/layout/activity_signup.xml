@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="1280dp"
+    android:padding="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/fn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="60sp"
+            android:hint="NAME"
+            android:textSize="15dp"
+            android:background="@drawable/cetext"
+            />
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_person_grey_24dp"
+            android:textColor="@color/White"
+            android:textSize="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="15dp"
+            />
+
+
+
+
+        <EditText
+            android:id="@+id/Phoneno"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/fn"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cetext"
+            android:hint="MOBILE NUMBER"
+            android:inputType="phone"
+            android:paddingLeft="60dp"
+            android:textSize="15dp" />
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_phone_iphone_black_24dp"
+            android:textColor="@color/White"
+            android:textSize="16dp"
+            android:layout_below="@id/fn"
+            android:layout_marginTop="31dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_lock_open_black_24dp"
+            android:textColor="@color/White"
+            android:textSize="16dp"
+            android:layout_below="@id/Phoneno"
+            android:layout_marginTop="31dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="15dp"
+            />
+
+
+
+
+
+        <!--
+     -->
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/Phoneno"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cetext"
+            android:hint="CHOOSE PASSWORD"
+            android:inputType="textPassword"
+            android:paddingLeft="60dp"
+            android:textSize="15dp" />
+
+
+        <EditText
+            android:id="@+id/emailid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/pass"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cetext"
+            android:hint="EMAIL ID"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="60dp"
+            android:textSize="15dp" />
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_recent_actors_black_24dp"
+            android:textColor="@color/White"
+            android:textSize="16dp"
+            android:layout_below="@id/pass"
+            android:layout_marginTop="31dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <EditText
+
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/emailid"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cetext"
+            android:hint="ADDRESS"
+            android:inputType="text"
+            android:paddingLeft="60dp"
+            android:textSize="15dp" />
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_recent_actors_black_24dp"
+            android:textColor="@color/White"
+            android:textSize="16dp"
+            android:layout_below="@id/emailid"
+            android:layout_marginTop="31dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonf"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="REGISTER"
+            android:id="@+id/but"
+            android:textColor="@color/White"
+            android:textSize="16dp"
+            android:layout_below="@+id/address"
+            android:layout_marginBottom="8dp"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

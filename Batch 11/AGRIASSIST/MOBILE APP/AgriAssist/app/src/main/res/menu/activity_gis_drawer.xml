@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <item
+            android:id="@+id/tfm"
+            android:icon="@drawable/ic_traffic_black_24dp"
+            android:title="Crop Traffic" />
+        <item
+            android:id="@+id/cstatus"
+            android:icon="@drawable/ic_local_florist_black_24dp"
+            android:title="Submit Crop Status" />
+        <item
+            android:id="@+id/getsuggestion"
+            android:icon="@drawable/ic_assignment_ind_black_24dp"
+            android:title="Get Suggestion" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="Logout" />
+
+
+</menu>

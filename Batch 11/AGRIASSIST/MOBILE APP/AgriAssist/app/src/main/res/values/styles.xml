@@ -1,0 +1,64 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/Crimson</item>
+        <item name="colorPrimaryDark">@color/Crimson</item>
+        <item name="colorAccent">@color/Crimson</item>
+
+    </style>
+    <style name="route_title" parent="android:Widget.TextView">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/Crimson</item>
+        <item name="colorPrimaryDark">@color/Crimson</item>
+        <item name="colorAccent">@color/White</item>
+    </style>
+
+    <style name="textscroll">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="MyAnim">
+        <item name="android:windowEnterAnimation">@anim/slideup</item>
+        <item name="android:windowExitAnimation">@anim/slidedown</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+        <item name="spinnerStyle">@style/SpinnerIcon</item>
+        <item name="colorPrimary">@color/Crimson</item>
+        <item name="colorPrimaryDark">@color/Crimson</item>
+        <item name="colorAccent">@color/Crimson</item>
+
+    </style>
+
+    <style name="Theme.MyApp.ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/Gray</item>
+    </style>
+
+    <style name="SpinnerIcon" parent="Widget.AppCompat.Spinner">
+        <item name="color">@color/Gray</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/Gray</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"></style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+</resources>

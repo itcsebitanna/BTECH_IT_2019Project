@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".IPEnter">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER YOUR LOCAL SYSTEM IP"
+        android:layout_marginTop="200dp"
+        android:textSize="20dp"
+        android:textColor="@color/Crimson"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+<EditText
+    android:id="@+id/ipadd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_centerHorizontal="true"
+    />
+    <Button
+        android:id="@+id/contin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+ android:layout_below="@+id/ipadd"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="CONTINUE"
+        android:background="@color/Crimson"
+        android:textColor="@color/White"
+        />
+</RelativeLayout>

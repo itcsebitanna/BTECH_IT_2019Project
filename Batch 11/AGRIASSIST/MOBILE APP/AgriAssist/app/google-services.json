@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "592813522296",
+    "firebase_url": "https://fireapp-13d57.firebaseio.com",
+    "project_id": "fireapp-13d57",
+    "storage_bucket": "fireapp-13d57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592813522296:android:44fae83ad7012114",
+        "android_client_info": {
+          "package_name": "com.agri.duraivel.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592813522296-dpog83udb98gjmf6j09986cumflvc8sc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agri.duraivel.myapplication",
+            "certificate_hash": "a2aee6722050e3b4122409b8c510f8f574730c29"
+          }
+        },
+        {
+          "client_id": "592813522296-8r0p51lnhddjq7qto6vc8h7caemu3uof.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "592813522296-8r0p51lnhddjq7qto6vc8h7caemu3uof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNOr1SmVN_qHVxkEEiRgMwWhPBxBpTvzk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592813522296-8r0p51lnhddjq7qto6vc8h7caemu3uof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592813522296:android:3a87b69826298ce7",
+        "android_client_info": {
+          "package_name": "com.example.duraivel.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592813522296-q8r84v44mlf1hnaa38n979utvld0b564.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.duraivel.myapplication",
+            "certificate_hash": "a2aee6722050e3b4122409b8c510f8f574730c29"
+          }
+        },
+        {
+          "client_id": "592813522296-8r0p51lnhddjq7qto6vc8h7caemu3uof.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "592813522296-8r0p51lnhddjq7qto6vc8h7caemu3uof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8624LQUc41q7JQFF5sgCT6G5nJbvZZMk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592813522296-8r0p51lnhddjq7qto6vc8h7caemu3uof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

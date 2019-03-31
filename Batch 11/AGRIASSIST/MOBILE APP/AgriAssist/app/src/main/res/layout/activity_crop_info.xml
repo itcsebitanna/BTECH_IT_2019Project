@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="1280dp"
+    android:padding="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/cropID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="60sp"
+            android:hint="CROP_ID"
+            android:textSize="15dp"
+            android:background="@drawable/cetext"
+            />
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_video_label_black_24dp"
+            android:textColor="@color/White"
+            android:textSize="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="15dp"
+            />
+
+
+
+
+        <EditText
+            android:id="@+id/cropName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cropID"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cetext"
+            android:hint="CROP"
+            android:inputType="phone"
+            android:paddingLeft="60dp"
+            android:textSize="15dp" />
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_local_florist_black_24dp"
+            android:textColor="@color/White"
+            android:textSize="16dp"
+            android:layout_below="@id/cropID"
+            android:layout_marginTop="31dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_terrain_black_24dp"
+            android:textColor="@color/White"
+            android:textSize="16dp"
+            android:layout_below="@id/cropName"
+            android:layout_marginTop="31dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="15dp"
+            />
+
+
+
+
+
+        <!--
+     -->
+        <EditText
+            android:id="@+id/cropSeason"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cropName"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cetext"
+            android:hint="SEASON"
+            android:inputType="textPassword"
+            android:paddingLeft="60dp"
+            android:textSize="15dp" />
+
+
+        <EditText
+            android:id="@+id/cropArea"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cropSeason"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cetext"
+            android:hint="AREA"
+            android:paddingLeft="60dp"
+            android:textSize="15dp" />
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_crop_square_black_24dp"
+            android:textColor="@color/White"
+            android:textSize="16dp"
+            android:layout_below="@id/cropSeason"
+            android:layout_marginTop="31dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <EditText
+
+            android:id="@+id/cropDisease"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cropArea"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cetext"
+            android:hint="DISEASE"
+            android:inputType="text"
+            android:paddingLeft="60dp"
+            android:textSize="15dp" />
+
+
+
+
+        <EditText
+            android:id="@+id/cropPesticide"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cropDisease"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cetext"
+            android:hint="PESTICIDES"
+            android:inputType="text"
+            android:paddingLeft="60dp"
+            android:textSize="15dp" />
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/cropDisease"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/ic_pool_black_24dp"
+            android:textColor="@color/White"
+            android:textSize="16dp" />
+
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/cropArea"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/ic_sentiment_very_dissatisfied_black_24dp"
+            android:textColor="@color/White"
+            android:textSize="16dp" />
+
+
+        <EditText
+
+            android:id="@+id/cropRemedies"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cropPesticide"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cetext"
+            android:hint="REMEDIES"
+            android:inputType="text"
+            android:paddingLeft="60dp"
+            android:textSize="15dp" />
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_repeat_black_24dp"
+            android:textColor="@color/White"
+            android:textSize="16dp"
+            android:layout_below="@id/cropPesticide"
+            android:layout_marginTop="31dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonf"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="SUBMIT"
+            android:id="@+id/but"
+            android:textColor="@color/White"
+            android:textSize="16dp"
+            android:layout_below="@+id/cropRemedies"
+            android:layout_marginBottom="8dp"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

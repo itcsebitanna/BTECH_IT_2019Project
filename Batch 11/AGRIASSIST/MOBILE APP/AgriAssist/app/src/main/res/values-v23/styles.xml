@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+        <item name="spinnerStyle">@style/SpinnerIcon</item>
+        <item name="colorPrimary">@color/Crimson</item>
+        <item name="colorPrimaryDark">@color/Crimson</item>
+        <item name="colorAccent">@color/Crimson</item>
+        <item name="android:statusBarColor">@color/Crimson</item>
+
+    </style>
+    <style name="Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/Crimson</item>
+        <item name="colorPrimaryDark">@color/Crimson</item>
+        <item name="colorAccent">@color/White</item>
+    </style>
+
+    <style name="MyAnim">
+        <item name="android:windowEnterAnimation">@anim/slideup</item>
+        <item name="android:windowExitAnimation">@anim/slidedown</item>
+    </style>
+
+    <style name="textscroll">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+</resources>
