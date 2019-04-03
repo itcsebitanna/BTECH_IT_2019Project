@@ -1,0 +1,217 @@
+package el;
+import java.io.*;
+import java.math.*;
+import java.util.*;
+import javafx.util.Pair;
+
+public class elgam {
+	private static byte[] readBytesFromFile(String filePath) {
+
+        FileInputStream fileInputStream = null;
+        byte[] bytesArray = null;
+
+        try {
+
+            File file = new File(filePath);
+            bytesArray = new byte[(int) file.length()];
+
+            //read file into bytes[]
+            fileInputStream = new FileInputStream(file);
+            fileInputStream.read(bytesArray);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fileInputStream != null) {
+                try {
+                    fileInputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        }
+
+        return bytesArray;
+
+    }
+	 private static void writeBytesToFile(byte[] bFile, String fileDest) {
+		 try(FileOutputStream fileOuputStream = new FileOutputStream(fileDest,true)) {
+	            fileOuputStream.write(bFile);
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }		 
+}
+	
+	public static BigInteger key_gen(BigInteger p,BigInteger g,BigInteger a)
+	{
+		BigInteger b=g.modPow(a,p);
+		return b;
+	}
+	public static Pair<BigInteger[],BigInteger> Encryption(BigInteger p,BigInteger g,byte[] M,int n,BigInteger b)
+	{
+		 long start = System.currentTimeMillis();
+		BigInteger R[]=new BigInteger[200];
+		BigInteger[] c=new BigInteger[200];
+		BigInteger mess,RK= BigInteger.ZERO,RK2= BigInteger.ZERO,mi,mi1;
+		BigInteger c2;
+		Random r=new Random();
+		int bitl= p.bitLength();
+		mess=new BigInteger(M);
+		for(int i=1;i<=n;i++)
+		{
+		R[i]=new BigInteger(bitl,r);
+		c[i]=g.modPow(R[i],p);
+		}
+		for(int i=1;i<=n;i++)
+		{
+			if(i%2==0)
+			RK2=RK2.add(R[i]);
+			else
+				RK=RK.add(R[i]);
+			
+		}
+		mi=b.modInverse(p);
+		mi1=mi.modPow(RK,p);
+		c2=((mess.multiply(b.modPow(RK2, p))).multiply(mi1)).mod(p);
+		 long end = System.currentTimeMillis();
+		   System.out.println("Elapsed Encryption time " + 
+                   (end - start) + "ms");
+		return new Pair<BigInteger[],BigInteger>(c,c2);
+	}
+	public static void decrypt(BigInteger c1[],BigInteger c2,BigInteger a,int n,BigInteger p)
+	{
+		 long start = System.currentTimeMillis();
+		BigInteger dnu=BigInteger.ONE,dnum,dd=BigInteger.ONE,c3,v;
+        String UPLOAD_FOLDER = "E:\\";
+        for(int i=1;i<=n;i=i+2)
+		{
+			dnu=dnu.multiply(c1[i].modPow(a,p));
+		}
+		dnum=(c2.multiply(dnu)).mod(p);
+		for(int i=2;i<=n;i=i+2)
+		{
+			v=c1[i].modInverse(p);
+			dd=dd.multiply(v.modPow(a,p));
+		}
+		
+		c3= (dnum.multiply(dd)).mod(p);
+			byte[] arr=c3.toByteArray();
+
+            //save bytes[] into a file
+            writeBytesToFile(arr, UPLOAD_FOLDER + "test1.txt");
+           
+            long end = System.currentTimeMillis();
+ 		   System.out.println("Elapsed Decryption time " + 
+                    (end - start) + "ms");
+ 	
+        }
+	public static int count(File file)
+	{
+		int linenumber=0;
+		try
+		{
+		if(file.exists()){
+		    FileReader fr = new FileReader(file);
+		    LineNumberReader lnr = new LineNumberReader(fr);
+		    
+	            while (lnr.readLine() != null){
+	        	linenumber++;
+	            }
+	 
+	            lnr.close();
+	        
+		     
+		}else{
+			 System.out.println("File does not exists!");
+		}
+		}
+		catch (IOException e) {
+            e.printStackTrace();
+        }
+		return linenumber;
+	}
+
+	public static void main(String[] args) {
+		
+	    BigInteger p,g,a,pub  ;
+		Random r=new Random();
+		int linenumber,line1;
+		Scanner sc=new Scanner(System.in);
+		p=BigInteger.probablePrime(1024,r);
+		int bitl= p.bitLength();
+		g=new BigInteger(bitl,r);
+		a=new BigInteger(bitl,r);
+		pub=key_gen(p,g,a);
+		String path=sc.nextLine();
+		File file= new File(path);
+		 int nof = 0,k=1;
+		linenumber=count(file);
+		File fi=new File("E://test1.txt");
+		fi.delete();
+		System.out.println("Total number of lines : " + linenumber);
+		try
+		{
+		double nol = 20.0; 
+		double temp = (linenumber / nol); 
+        int temp1 = (int) temp;  
+        if (temp1 == temp) { 
+            nof = temp1; 
+        } else { 
+            nof = temp1 + 1; 
+        } 
+        System.out.println("No. of files to be generated :" + nof); 
+
+        // splitting of file into multiple files 
+        FileInputStream fstream = new FileInputStream(file); 
+        DataInputStream in = new DataInputStream(fstream); 
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(in)); 
+        String strLine; 
+
+        for (int j = 1; j <= nof; j++) { 
+
+            // location of new file 
+            FileWriter fstream1 = new FileWriter("E:/" + j + ".txt"); 
+            BufferedWriter out = new BufferedWriter(fstream1); 
+            for (int i = 1; i <= nol; i++) { 
+                strLine = br.readLine(); 
+                if (strLine != null) { 
+                    out.write(strLine); 
+                    if (i != nol) { 
+                        out.newLine(); 
+                    } 
+                } 
+            } 
+            out.close(); 
+        } 
+
+        in.close(); 
+		}
+		catch(IOException e)
+		{
+			e. printStackTrace();
+		}
+		while(k<=nof)
+		{
+		File file1=new File("E:/" + k + ".txt");
+		int line=count(file1);
+		byte[] bFile = readBytesFromFile("E:/" + k + ".txt");
+		line1=line/5;
+		if(line%5!=0)
+		line1++;
+		System.out.println("line111"+line1);
+		Pair<BigInteger[],BigInteger> ci = Encryption(p,g,bFile,line,pub);
+		System.out.println("Encrypted  text=");
+		for( int j=1;j<=line;j++)
+		{
+		System.out.println("\nc1["+j+"]="+ci.getKey()[j]);
+		}
+		System.out.println("\nc2="+ci.getValue());
+		decrypt(ci.getKey(),ci.getValue(),a,line,p);
+		 System.out.println("Done");
+		k++;
+		}
+		sc.close();
+	}
+}
