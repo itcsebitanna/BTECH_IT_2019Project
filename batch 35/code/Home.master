@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Home" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<title>Group Data Sharing</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">Group Data Sharing</a></h1>
+		</div>
+		
+	</div>
+	<div id="menu">
+		<ul>
+			<li class="first current_page_item"><a href="Default.aspx">Homepage</a></li>
+            <li><a href="AdminLogin.aspx">AdminLogin</a></li>
+			<li><a href="ManagerLogin.aspx">ManagerLogin</a></li>
+			<li><a href="AsstManagerLogin.aspx">AsstManagerLogin</a></li>
+			<li class="last"><a href="User.aspx">UserLogin</a></li>
+		</ul>
+		<br class="clearfix" />
+	</div>
+	<%--<div id="splash">
+		<img class="pic" src="images/pic01.jpg" width="870" height="230" alt="" />
+	</div>--%>
+	<br class="clearfix" />
+		
+			<form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+			
+		<br class="clearfix" />
+	
+	
+	
+
+
+</div> 
+<div id="footer">
+	&copy; Group Data Sharing <a href="#" rel="nofollow">Website</a>.
+</div>
+    
+</body>
+</html>
